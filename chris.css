@@ -1,0 +1,32 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+body{
+		padding:0;
+		background-image: url(chrisprinci.jpg);
+		background-repeat: no-repeat;
+		background-size:cover;
+		
+		
+}
+.btn1{
+	position:relative;
+	left:33%;
+	top:130px;
+}
+#bordergif{
+    width:140px;
+    height:140px;
+    position:relative;
+    left:44%;
+    top:80px;
+}
+h1{
+    text-align: center;
+    font-family: 'Rubik Storm', cursive;
+    color:aqua;
+    font-size:200px;
+}

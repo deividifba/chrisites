@@ -1,0 +1,64 @@
+
+
+#container{
+	border:2px solid black;	
+	height:450px;
+	display:grid; 
+	/* Display grid habilita a utilização da técnica de organização de elementos que trabalha com duas dimensões, linhas e colunas ao mesmo tempo*/
+	grid-template-columns:repeat(5,1fr);
+	/* Grid template columns define qual o modelo (organização) do grid em colunas, é necessário passar o tamanho de cada uma das colunas que forem ser utilizadas*/
+	/* Quando os valores forem repetidos você pode utilizar a função repeat(quantidade de vezes, o tamanho)*/
+	/*A unidade de medida Fr (fração) faz a divisão do espaço livre disponivel no elemento container*/
+	grid-template-rows: 20% 10% 25% 25% 20%; 
+	/* Grid template rows define quel o modelo (organização) do grid em linhas, é necessário passar o tamanho de cada uma das linhas que forem ser utilizadas*/
+	
+	grid-template-areas:  "topo topo topo topo topo "
+	                      "menu menu menu menu menu " 
+	                      "main main . lat lat "
+                          "sec sec . lat lat "		  
+	                      "rod rod rod rod rod ";
+	
+	
+}
+
+header{
+	background-color:red;
+	/*grid-column: 1/6;*/
+	/*Grid column resume as propriedades grid-column-start e grid-column-end em que são passados os dois valores separados por uma barra: 1/6    */
+	/*grid-row:1/2;*/
+	/*resume grid-row-start e o grid-row-end*/
+	grid-area:topo;
+}
+nav{
+	background-color:yellow;
+	grid-area:menu;
+}
+main{
+	background-color:blue;
+	grid-area:main;
+}
+section{
+	background-color:green;
+	grid-area:sec;
+}
+aside{
+	background-color:pink;
+	grid-area:lat;
+}
+footer{
+	background-color:orange;
+	grid-area:rod;
+	/*grid-row-start:5;*/
+	/* grid row start informa o ponto inicial do posicionamento do elemento nas linhas do grid*/
+	/*grid-row-end:6;*/
+	/* grid row end informa o ponto final do posicionamento do elemento  nas linhas do grid*/
+	/*grid-column-start:1;
+	grid-column-end:6;*/
+}
+
+
+
+
+
+
+

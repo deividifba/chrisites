@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Formulários</title>
+		<link href="chris2.css" rel="stylesheet">
+	</head>
+	<body>                     
+		<header>
+            <a href="#" class="logo">BIXIN NOSSO</a>
+            <ul>
+                <li><a href="index.html">Principal</a></li>
+                <li><a href="#" class="active">Indrodução</a></li>
+                <li><a href="chris3.html">Fotos</a></li>
+                <li><a href="chris4.html">Jogo Final</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountais_behind">
+            <h2 id="text">CHRIS</h2>
+            <a href="#sec" id="btn">Explorar</a>
+            <img src="mountains_front.png" id="mountais_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Mais sobre ele</h2>
+            <p>Chrispher Martin Azevedo, conhecido como apenas "chris", é um cachorrinho muito sapeca que mora na cidade de Guanambi, a sua raça é chamada de "border-collie", que é considerada como umas das mais inteligentes do mundo.<br><br>Ele nasceu no dia primeiro de março do ano de 2022, e desde sempre já era muito brincalhão<br><br>Seu nome vem de um cantor que faz parte de uma banda inglesa chamado coldplay, que é umas das favoritas da família de chris</p>
+            <img src="chris.png" id="chris">
+            <img src="chris2.png" id="chris2">
+            <p>Ele é o caçulinha da família, como se ainda fosse um grande bebezão, sempre emotivo quando encontra alguém, lambendo e chorando entre suas suas pernas.</p><br><br><p>Esse site tem o proposito de simplesmente apresentar nosso queridinho e demonstrar nosso carinho que temos por ele.</p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 +'px';
+                moon.style.top = value * 1.05 +'px';
+                mountains_behind.style.top = value * 0.5 +'px';
+                mountains_front.style.top = value * 0 +'px';
+                text.style.marginRight = value * 4 +'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+            })
+        </script>
+        <script src="chris2.js"></script>
+	</body>
+</html>
